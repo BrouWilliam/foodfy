@@ -1,27 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Foodfy</title>
-</head>
-<body>
-    <header class="container">
-        <div class="logo">
-            <img src="/assets/logo.png" alt="">
-        </div>
-        <ul>
-            <li>
-                <a href="sobre.html">Sobre</a>
-            </li>
-            <li>
-                <a href="receitas.html">Receitas</a>
-            </li>
-        </ul>
-    </header>
+{% extends "layout.njk"%}
 
+{% block head %}
+    <title>Receitas - Sobre</title>
+{% endblock %}
+
+{% block content%}
     <section class="sobre">
         <div class="container">
             <h2>Sobre o Foodfy</h2>
@@ -54,9 +37,4 @@
                 semper orci et, malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.</p>
         </div>
     </section>
-
-    <footer>
-        <p>Todos direitos reservados, receitas Foofy.</p>
-    </footer>
-</body>
-</html>
+{% endblock%}

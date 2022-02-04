@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -128,6 +135,72 @@ section.sobre p{
     margin-bottom: 30px;
 }
 
+section.receita{
+    margin: 50px auto;
+}
+section.receita .thumb img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+section.receita h2{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 36px;
+    color: #111111;
+}
+section.receita p{
+    margin-top: 4px;
+    text-align: center;
+    color: #777777;
+}
+section.receita .title{
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+section.receita .title h4{
+    font-size: 24px;
+    color: #111111;
+}
+section.receita .title span{
+    font-size: 12px;
+    color: #999999;
+}
+
+section.receita .ingredientes{
+    margin-top: 3rem;
+}
+section.receita .ingredientes ul{
+    margin-top: 1.25rem;
+    transition: all .3s ease;
+    padding-left: 40px;
+}
+section.receita .ingredientes ul li{
+    color: #444444;
+    font-size: 1.125rem;
+    line-height: 28px;
+}
+
+section.receita .modo_preparo{
+    margin-top: 3rem;
+}
+section.receita .modo_preparo ul{
+    margin-top: 1.25rem;
+    padding-left: 40px;
+}
+section.receita .modo_preparo ul li{
+    color: #444444;
+    font-size: 1.125rem;
+    line-height: 28px;
+}
+
+section.receita .informacoes_adicionais{
+    margin-top: 3rem;
+}
+section.receita .informacoes_adicionais p{
+    text-align: left;
+}
 /* === MODAL === */
 
 .modal-overlay{
